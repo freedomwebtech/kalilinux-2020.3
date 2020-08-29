@@ -1,0 +1,14 @@
+1) Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+2) restart
+3) dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+4) dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+5) restart
+6) https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+7) wsl --set-default-version 2
+   
+*****install microsoft kali linux*****
+
+8) set username and password
+9) sudo apt update
+10)sudo apt upgrade
+11)sudo apt install kali-win-kex
